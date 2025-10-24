@@ -6,6 +6,9 @@ const app=express();
 app.get('/',(_,res)=>{
     res.json('server is up & running...');
 })  
+app.get('/new',(_,res)=>{
+    res.json('new api is running...');
+})  
 
 
 const PORT = process.env.PORT || 8080;
